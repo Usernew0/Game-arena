@@ -1,0 +1,127 @@
+* {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+:root {
+  --color-primary: #cbfe1c;
+  --color-white: #fff;
+  --color-dark-green: #173201;
+  --color-border: #455709;
+}
+
+.font1 {
+  font-family: "Days One", sans-serif;
+}
+#nav .font2 {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.primary-color-nav {
+  color: var(--color-primary);
+}
+.border-green {
+  border: 4px solid var(--color-primary);
+}
+.border-gradient {
+  border: 4px solid transparent;
+  background: linear-gradient(to right, #012e18, #03de73) border-box;
+}
+
+.dark-bg-green {
+  background-color: var(--color-dark-green);
+}
+
+.backg {
+  background-color: #0b0e13;
+}
+nav .navbar-brand:hover,
+nav .navbar-brand:focus {
+  color: var(--color-primary);
+}
+.border-color-head {
+  border-bottom: rgba(255, 255, 255, 0.2) 2px solid;
+}
+#navbarSupportedContent .nav-link {
+  color: var(--color-white);
+}
+#navbarSupportedContent .nav-link.active {
+  color: var(--color-primary);
+}
+
+/* start hero */
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.start-btn {
+  color: white;
+  transition: all 0.5s;
+}
+.start-btn:hover {
+  background-color: #132901;
+}
+
+.watch-btn {
+  border: 2px solid var(--color-border);
+  transition: all 0.5s;
+}
+.watch-btn:hover {
+  background-color: var(--color-dark-green);
+  border: 2px solid var(--color-border);
+}
+
+.angle-position {
+  bottom: -50px;
+  left: -50px;
+}
+
+.hover:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* end hero */
+
+/* start latest-games */
+
+#latest-games {
+  padding-block: 90px;
+  transition: all;
+}
+
+.ga-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  position: relative;
+  left: -15px;
+  background: linear-gradient(to right, #121602, var(--color-border));
+  transform: translateY(-200%);
+}
+
+.ga-eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  position: relative;
+  left: 15px;
+  background: linear-gradient(to left, #121602, var(--color-border));
+  transform: translateY(-200%);
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.wh-64 {
+  width: 64px;
+  height: 64px;
+}
+/* end latest-games */

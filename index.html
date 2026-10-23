@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,750;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Assignment 6</title>
+  </head>
+  <body class="bg-dark text-light">
+    <nav id="nav" class="navbar navbar-expand-lg border-color-head backg p-3 position-fixed z-2 w-100">
+      <div class="container">
+        <i class="fa-solid fa-gamepad me-1 primary-color-nav"></i>
+        <a class="navbar-brand primary-color-nav" href="#">GameArena</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR GAMES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">What We Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex g-3 align-items-center">
+            <i class="fa-regular fa-bell me-3 hover fs-5"></i>
+            <i class="fa-regular fa-message me-3 hover fs-5"></i>
+            <form class="d-flex" role="signin">
+              <button class="btn font2 text-white dark-bg-green fw-bold" type="submit">sign in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section  -->
+    <section id="hero" class="min-vh-100 w-100 d-flex align-items-center">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <!-- left -->
+          <div class="col-lg-6">
+            <h1 class="display-3 fw-bold lh-sm mb-4 font1">
+              THE ULTIMATE
+              <br />
+              <span class="primary-color-nav font1">GAMING</span>
+              <br />
+              EXPERIENCE
+            </h1>
+            <p class="lead mb-4">Join millions of gamers worldwide in the most competitive eSports tournaments. Experience next-level gaming with cutting-edge technology and endless possibilities.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <button class="btn dark-bg-green start-btn fw-semibold py-3 px-4">Start Gaming Now</button>
+              <button class="btn btn-outline-success primary-color-nav watch-btn fw-semibold py-3 px-4">Watch Tournaments</button>
+            </div>
+          </div>
+          <!-- right  -->
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <div class="ratio ratio-4x3">
+                <img class="object-fit-cover border-gradient rounded-4 shadow-lg" src="./images/hero-img.png" alt="Professional esports player gaming setup with RGB keyboard and multiple monitors" />
+              </div>
+
+              <div class="position-absolute angle-position m-3 d-flex align-items-center gap-2 p-3 bg-dark border border-1 border-secondary rounded-3">
+                <div class="primary-color-nav rounded-3 fs-5 me-1">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                  <small class="d-block text-secondary">Active Players</small>
+                  <strong class="fs-5">2.5M+</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest game -->
+    <section id="latest-games" class="backg">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="ga-eyebrow w-auto mb-4 primary-color-nav">OUR GAMES</span>
+          <h2 class="ga-title font1 fs-1">Our Latest Games</h2>
+        </div>
+        <div id="gamesCarousel" class="carousel slide ga-carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-1.png" alt="Alien Companions" />
+                    <div class="ga-game-body">
+                      <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="ga-tag">Adventure</span>
+                        <span class="ga-tag">Multiplayer</span>
+                      </div>
+                      <h3>Alien Companions</h3>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-2.png" alt="Cyber Run 2099" />
+                    <div class="ga-game-body">
+                      <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="ga-tag">Racing</span>
+                        <span class="ga-tag">Sci-Fi</span>
+                      </div>
+                      <h3>Cyber Run 2099</h3>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-3.png" alt="The Legend of Zelda" />
+                    <div class="ga-game-body">
+                      <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="ga-tag">Action</span>
+                        <span class="ga-tag">Adventure</span>
+                      </div>
+                      <h3>The Legend of Zelda</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-4.png" alt="Aetheria Chronicles" />
+                    <div class="ga-game-body">
+                      <span class="ga-tag">RPG Fantasy</span>
+                      <h3>Aetheria Chronicles</h3>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-5.png" alt="Warfront Protocol" />
+                    <div class="ga-game-body">
+                      <span class="ga-tag">Shooter Co-op</span>
+                      <h3>Warfront Protocol</h3>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-6.png" alt="Shot Striker" />
+                    <div class="ga-game-body">
+                      <span class="ga-tag">Football Fantasy</span>
+                      <h3>Shot Striker</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-7.png" alt="Epic Gaming League" />
+                    <div class="ga-game-body">
+                      <span class="ga-tag">Sports League</span>
+                      <h3>Epic Gaming League</h3>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-8.png" alt="Barren Alien Worlds" />
+                    <div class="ga-game-body">
+                      <span class="ga-tag">Space Exploration</span>
+                      <h3>Barren Alien Worlds</h3>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <article class="ga-game ratio ratio-4x3">
+                    <img src="./images/latest-games-9.png" alt="Cloveland Quest" />
+                    <div class="ga-game-body">
+                      <span class="ga-tag">Action Futuristic</span>
+                      <h3>Cloveland Quest</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="d-flex flex-row flex-nowrap mt-48 justify-content-center align-items-center">
+          <div class="ga-controls d-flex gap-3">
+            <button class="ga-arrow wh-64 border border-2 rounded-5 bg-transparent text-secondary border-secondary" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev" aria-label="Previous games">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button class="ga-arrow wh-64 border border-2 rounded-5 bg-transparent text-secondary border-secondary" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next" aria-label="Next games">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-ga btn-lg">View All Games</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
