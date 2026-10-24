@@ -44,6 +44,10 @@
 .backg {
   background-color: #0b0e13;
 }
+nav .navbar-nav a:hover {
+  color: var(--color-primary);
+}
+
 nav .navbar-brand:hover,
 nav .navbar-brand:focus {
   color: var(--color-primary);
@@ -51,10 +55,11 @@ nav .navbar-brand:focus {
 .border-color-head {
   border-bottom: rgba(255, 255, 255, 0.2) 2px solid;
 }
-#navbarSupportedContent .nav-link {
+nav .navbar-nav .nav-link {
   color: var(--color-white);
 }
-#navbarSupportedContent .nav-link.active {
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link.active {
   color: var(--color-primary);
 }
 
