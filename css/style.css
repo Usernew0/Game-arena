@@ -340,6 +340,9 @@ nav .navbar-brand:focus {
 .ls {
   letter-spacing: 1em;
 }
+.ls-1 {
+  letter-spacing: 0.25em;
+}
 .rem-3 {
   font-size: 3rem;
 }
@@ -396,3 +399,167 @@ nav .navbar-brand:focus {
   font-size: 1.125rem;
 }
 /* end our best team members */
+
+/* start contact */
+
+#contact {
+  padding-block: 90px;
+  background: linear-gradient(135deg, #111827, #0b0e13); /* from-gray-900 to-dark */
+}
+
+.contact-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space-y-8 */
+}
+
+.contact-card {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contact-icon {
+  background-color: var(--color-primary);
+  color: #0b0e13;
+  font-size: 1.5rem;
+}
+
+.contact-community {
+  background: linear-gradient(to right, var(--color-primary), #4ade80);
+  color: #0b0e13;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  background-color: #0b0e13;
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.social-btn:hover {
+  background-color: rgba(11, 14, 19, 0.8);
+  color: var(--color-primary);
+}
+
+.contact-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-input {
+  background-color: #374151;
+  padding: 0.75rem 1rem;
+  border: 1px solid #4b5563;
+  border-radius: 0.5rem;
+}
+.contact-input::placeholder {
+  color: #9ca3af;
+}
+.contact-input:focus {
+  background-color: #374151;
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--color-primary);
+  outline: none;
+}
+textarea.contact-input {
+  resize: none;
+}
+
+.contact-input option {
+  background-color: #374151;
+  color: #fff;
+}
+
+.contact-check {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  background-color: #374151;
+  border: 1px solid #4b5563;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.contact-check:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.contact-check:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(203, 254, 28, 0.5);
+}
+
+.btn-contact {
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-color: #0b0e13;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-bg: rgba(203, 254, 28, 0.8);
+  --bs-btn-hover-color: #0b0e13;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-bg: rgba(203, 254, 28, 0.8);
+  --bs-btn-active-color: #0b0e13;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: 203, 254, 28;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.6s ease;
+}
+.btn-shine:hover::after {
+  left: 120%;
+}
+
+.contact-stats {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #374151;
+}
+
+/* end contact */
+
+/* start footer */
+
+.footer-brand {
+  color: var(--color-primary);
+  cursor: text;
+}
+.footer-brand:hover {
+  color: var(--color-primary);
+}
+
+.footer-link,
+.footer-social a {
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.footer-link:hover,
+.footer-social a:hover {
+  color: var(--color-primary);
+}
+
+.footer-bottom {
+  border-color: #1f2937;
+}
+
+/* end footer */
