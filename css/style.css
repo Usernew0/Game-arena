@@ -353,48 +353,43 @@ nav .navbar-brand:focus {
   color: #9ca3af;
 }
 
-.team-grid {
-  --bs-gutter-x: 2rem;
-  --bs-gutter-y: 2rem;
-}
-
 .team-card {
-  height: 320px; /* h-80 */
-  background-color: #111827; /* bg-gray-900 */
+  height: 320px;
+  background-color: #111827;
   border: 1px solid transparent;
   cursor: pointer;
   isolation: isolate;
   transition: border-color 0.3s ease;
 }
-.team-card:hover {
-  border-color: var(--color-border);
-}
 
-.team-card > img {
-  transition: transform 0.4s ease;
-}
-.team-card:hover > img {
-  transform: scale(1.05);
-}
-
-/* from-black via-transparent to-transparent + opacity-60 */
 .team-card-overlay {
+  z-index: 1;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 50%, transparent 100%);
+  -webkit-backdrop-filter: grayscale(1);
+  backdrop-filter: grayscale(1);
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+  transition:
+    all 0.6s ,
+    -webkit-clip-path 0.6s ;
+}
+
+.team-card:hover .team-card-overlay {
+  -webkit-clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0);
 }
 
 .team-card-info {
   z-index: 1;
 }
 .team-card-sub {
-  font-size: 12px; /* text-xs */
+  font-size: 12px;
 }
 
 .rotate-text {
   writing-mode: sideways-lr;
   transform: rotate(-180deg);
-  font-size: 1.125rem; /* text-lg */
-  letter-spacing: 3px;
+  font-size: 1.125rem;
 }
 /* end our best team members */
