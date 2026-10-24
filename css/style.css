@@ -7,6 +7,7 @@
   --color-white: #fff;
   --color-dark-green: #173201;
   --color-border: #455709;
+  --color-card: #1b1b1b;
 }
 
 .font1 {
@@ -204,3 +205,62 @@ nav .navbar-brand:focus {
   border: 2px solid var(--color-border);
 }
 /* end latest-games */
+
+/* start what we do */
+
+#what-we-do {
+  padding-block: 90px;
+}
+
+.wwd-card {
+  background-color: #1a1a1a;
+  border: 1px solid #1f2937;
+  transition: all 0.3s;
+}
+.wwd-card:hover {
+  border-color: var(--color-border);
+}
+
+.wwd-icon-box {
+  background-color: #1f2937;
+  transition: all 0.3s;
+}
+.wwd-icon-box i {
+  transition: all 0.3s;
+}
+.wwd-card:hover .wwd-icon-box {
+  background-color: var(--color-primary);
+}
+.wwd-card:hover .wwd-icon-box i {
+  color: var(--color-white);
+}
+
+.wwd-corner {
+  width: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+.wwd-corner-tl {
+  top: -24px;
+  left: -24px;
+  border-top: 24px solid #4b5563;
+  border-right: 24px solid transparent;
+}
+.wwd-corner-br {
+  bottom: -24px;
+  right: -24px;
+  border-bottom: 24px solid #4b5563;
+  border-left: 24px solid transparent;
+}
+.wwd-card:hover .wwd-corner-tl {
+  top: 16px;
+  left: 16px;
+  border-top-color: var(--color-primary);
+}
+.wwd-card:hover .wwd-corner-br {
+  bottom: 16px;
+  right: 16px;
+  border-bottom-color: var(--color-primary);
+}
+
+/* end what we do */
