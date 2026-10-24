@@ -10,6 +10,11 @@
   --color-card: #1b1b1b;
 }
 
+::selection {
+  color: white;
+  background-color: var(--color-primary);
+}
+
 .font1 {
   font-family: "Days One", sans-serif;
 }
@@ -211,6 +216,20 @@ nav .navbar-brand:focus {
 #what-we-do {
   padding-block: 90px;
 }
+.what-we-do:after {
+  content: "";
+  background: linear-gradient(90deg, transparent, var(--color-border) 20%, var(--color-border) 80%, transparent);
+  width: 80%;
+  max-width: 600px;
+  height: 2px;
+  box-shadow:
+    0 0 10px var(--color-border),
+    0 0 20px #cbfe1c4d;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .wwd-card {
   background-color: #1a1a1a;
@@ -264,3 +283,118 @@ nav .navbar-brand:focus {
 }
 
 /* end what we do */
+
+/* start sponsors */
+
+#sponsors {
+  padding-block: 80px;
+}
+
+.sponsors-wrap {
+  isolation: isolate;
+}
+
+.sponsor-logo {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #1f2937;
+  transition: all 0.3s;
+}
+.sponsor-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sponsors-fade {
+  width: 128px;
+  z-index: 1;
+  pointer-events: none;
+}
+.sponsors-fade-start {
+  background: linear-gradient(to right, #0b0e13, transparent);
+}
+.sponsors-fade-end {
+  background: linear-gradient(to left, #0b0e13, transparent);
+}
+
+.sponsors-glow {
+  width: 1200px;
+  height: 350px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, rgba(203, 254, 28, 0.85) 0%, transparent 70%);
+}
+
+/* end sponsors */
+
+/* start our best team members */
+
+#Our-Best-Team-Members {
+  padding-block: 90px;
+}
+.ls {
+  letter-spacing: 1em;
+}
+.rem-3 {
+  font-size: 3rem;
+}
+.pt-24 {
+  padding-top: 24px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.team-grid {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+
+.team-card {
+  height: 320px; /* h-80 */
+  background-color: #111827; /* bg-gray-900 */
+  border: 1px solid transparent;
+  cursor: pointer;
+  isolation: isolate;
+  transition: border-color 0.3s ease;
+}
+.team-card:hover {
+  border-color: var(--color-border);
+}
+
+.team-card > img {
+  transition: transform 0.4s ease;
+}
+.team-card:hover > img {
+  transform: scale(1.05);
+}
+
+/* from-black via-transparent to-transparent + opacity-60 */
+.team-card-overlay {
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 50%, transparent 100%);
+}
+
+.team-card-info {
+  z-index: 1;
+}
+.team-card-sub {
+  font-size: 12px; /* text-xs */
+}
+
+.rotate-text {
+  writing-mode: sideways-lr;
+  transform: rotate(-180deg);
+  font-size: 1.125rem; /* text-lg */
+  letter-spacing: 3px;
+}
+/* end our best team members */
