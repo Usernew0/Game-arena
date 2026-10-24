@@ -22,6 +22,10 @@
 .border-green {
   border: 4px solid var(--color-primary);
 }
+
+.border-dark-green {
+  border: 2px solid var(--color-border);
+}
 .border-gradient {
   border: 4px solid transparent;
   background: linear-gradient(to right, #012e18, #03de73) border-box;
@@ -90,7 +94,6 @@ nav .navbar-brand:focus {
 
 #latest-games {
   padding-block: 90px;
-  transition: all;
 }
 
 .ga-eyebrow::before {
@@ -123,5 +126,81 @@ nav .navbar-brand:focus {
 .wh-64 {
   width: 64px;
   height: 64px;
+}
+
+.ga-tag {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.ga-game {
+  border-radius: 16px;
+  border: 1px solid transparent;
+  isolation: isolate;
+  transition: border-color 0.3s ease;
+}
+.ga-game:hover {
+  border-color: var(--color-border);
+}
+
+.ga-game > img {
+  inset: 0;
+  transition: transform 0.4s ease;
+}
+.ga-game:hover > img {
+  transform: scale(1.04);
+}
+
+.ga-game-body {
+  inset: 0;
+}
+
+.ga-game-gradient {
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(69, 87, 9, 0.7) 0%, rgba(23, 50, 1, 0.4) 10%, rgba(23, 50, 1, 0.3) 40%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.ga-game:hover .ga-game-gradient {
+  opacity: 1;
+}
+
+.ga-game-info {
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.ga-game-info > div {
+  transform: translateY(-250%);
+  transition: transform 0.3s ease;
+}
+
+.ga-game-info > h3 {
+  transform: translateY(250%);
+  transition: transform 0.3s ease;
+}
+
+.ga-game:hover .ga-game-info > div,
+.ga-game:hover .ga-game-info > h3 {
+  transform: translateY(0);
+}
+
+.btn-ga {
+  padding: 16px 32px;
+}
+
+.btn-ga:hover {
+  padding: 16px 32px;
+  background-color: var(--color-dark-green);
+  border: 2px solid var(--color-border);
 }
 /* end latest-games */
